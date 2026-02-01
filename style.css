@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: #ffd6e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN BOX */
+.container {
+    background: #ff4d6d;
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    width: 420px;
+}
+
+/* BUTTON AREA */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    height: 90px;
+}
+
+/* SAME SIZE BUTTONS */
+.btn {
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#yesBtn {
+    background: white;
+    color: #ff4d6d;
+    z-index: 2;
+}
+
+#noBtn {
+    background: black;
+    color: white;
+    position: absolute;
+    left: 200px;
+    top: 20px;
+    z-index: 1;
+
+    /* 🧈 smooth but fast */
+    transition: transform 0.18s cubic-bezier(.17,.67,.4,1.4);
+}
+
+/* OVERLAY */
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+/* POPUP */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.overlay.show {
+    display: flex;
+}
