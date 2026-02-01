@@ -47,7 +47,6 @@ body {
 #noBtn {
     background: black;
     color: white;
-    position: static;
     left: 200px;
     top: 20px;
     z-index: 1;
